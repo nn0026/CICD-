@@ -1,4 +1,4 @@
-from node:lastest
+from node:latest
 
 workdir /usr/src/app
 
