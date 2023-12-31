@@ -8,6 +8,6 @@ run npm install
 
 copy . .
 
-expost 3000
+expose 3000
 
 cmd ["node", "app.js"]
