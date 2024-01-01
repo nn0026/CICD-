@@ -11,8 +11,8 @@ pipeline {
         stage('Build and Push Docker Image'){
             steps {
                 withDockerRegistry(credentialsId: 'docker-hub', url: 'https://index.docker.io/v1/') {
-                    sh 'sudo docker build -t 21127209/helloworld1 .'
-                    sh 'sudo docker push 21127209/helloworld1'    
+                    sh 'docker build -t 21127209/helloworld1 .'
+                    sh 'docker push 21127209/helloworld1'    
                 }
             }
         }
